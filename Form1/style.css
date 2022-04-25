@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-primaria : #2B50F5;
+    --cor-secundaria : #6932FA;
+}
+
+ul {
+    list-style: none;  
+}
+
+.check {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0 10px 30px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+body {
+    background-color: var(--cor-secundaria); 
+    position: relative;
+}
+
+.bg-fundo {
+    background-image: url(img/programation.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.2;
+}
+   
+h1, p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.5em;
+    position: relative;
+}
+
+fieldset {
+    border: 0;
+}
+
+form {
+    width: 700px;
+    height: 1050px;
+    background-color: rgb(117, 177, 226);
+    margin: auto;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.campo {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0 10px 30px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+}
+
+.campo input {
+    width: 600px;
+    height: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+
+input:focus {
+    border: 5px solid rgba(98, 98, 247, 0.473);
+    
+}
+
+.seletion {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 0 10px 30px;
+    font-weight: bold;
+    color: white; 
+    position: relative; 
+}
+
+.radio {
+    height: 17px;
+    width: 17px;
+    
+}
+
+.senioridade {
+    width: 600px;
+    height: 30px;
+    margin-top: 5px;
+    
+}
+
+.senioridade:focus {
+    border: 3px solid rgba(11, 11, 235, 0.473);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 600px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 30px;
+    background-color: rgb(55, 112, 64);
+    color: white;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    button {width: 400px; height: 30px;}
+    .campo input {width: 400px; height: 30px;}
+    .senioridade {width: 400px; height: 30px;}
+    textarea {width: 400px; height: 70px;}
+    form {width: 450px;} 
+    
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position / Z-index </title>
+    <style>
+        .box-green {
+            width: 300px;
+            height: 200px;
+            background-color: green;
+            border: 10px solid #2d6827;
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .box-blue {
+            width: 200px;
+            height: 400px;
+            background-color: blue;
+            border: 10px solid #1d1a86;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .box-red {
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        </style>
+</head>
+<body>
+   
+    <div class="box-green"></div>
+    <div class="box-blue"></div>
+    <div class="box-red"></div>
+    
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+ul {
+    background-color: #ffc;
+}
+
+li {
+    background-color: #fcf;
+}
+
+/* odd = impares, even = pares, 1 = SELECIONA 1 CASA , 2n = INTERCALA  */
+
+li:nth-child(2n) {
+    background-color: #cfc;
+    
+}
