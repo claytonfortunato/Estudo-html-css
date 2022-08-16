@@ -1,0 +1,7 @@
+/* Entre 600px a 900px */
+@media screen and (max-width:900px) and (min-width:600px) {
+    .exemplo {
+        background-color: yellow;
+        height: 400px;
+    }
+}
