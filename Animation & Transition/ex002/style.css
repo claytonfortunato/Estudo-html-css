@@ -1,0 +1,48 @@
+/*
+ease - Início lento, rápido e final lento (este é o padrão)
+linear - Mesma velocidade do início ao fim
+easy-in - Início lento
+easy-out - Final lento
+easy-in-out - Início e fim lentos
+cubic-bezier(n,n,n,n) - Permite definir seus próprios valores em uma função cubic-bezier
+*/
+
+.line {
+    width: 100%;
+    background-color: blue;
+    height: 25px;
+    margin-bottom: 10px;
+
+    transition: width;
+    transition-duration: 1s;
+}
+
+body:hover .line {
+    width: 20px;
+    background-color: fuchsia;
+    
+}
+
+.ease {
+    transition-timing-function: ease;
+}
+
+.linear {
+    transition-timing-function: linear;
+}
+
+.ease-in {
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.cube {
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
