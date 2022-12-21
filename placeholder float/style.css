@@ -43,9 +43,11 @@ body {
     resize: none;
     border-radius: 6px;
     border: 1px solid #ccc;
+    font-size: 20px;
+    line-height: 3rem;
 }
 
-button {
+.app_form button {
     width: 100%;
     background-color: #1abc9c;
     padding: 10px;
@@ -54,4 +56,29 @@ button {
     cursor: pointer;
     color: #fff;
     transition: background-color .3s ease;
+}
+
+.app_form button:hover {
+    background-color: #16a085;
+}
+
+.app_form span {
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: .5;
+}
+
+.app_form input:focus ~ span,
+.app_form textarea:focus ~ span,
+.app_form input:valid ~ span,
+.app_form textarea:valid ~ span
+{ /* back,color, translate pode ser alterado para altura do span */
+    transform: translateY(-25px);
+    font-size: 14px;
+    opacity: 1;
+    background-color: #fff; 
+    color: #1abc9c;
 }
