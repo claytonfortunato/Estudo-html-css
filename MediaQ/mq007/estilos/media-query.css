@@ -9,20 +9,38 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
+/* Layout Fixo
+   px - Pixels
+   
+   Layout Fuido
+   % - Porcentagem
+   auto - Automatico
+   vh - Viewwport Height
+   vw - Viewport Width
+
+   Textos fixos
+   1px = 0.75pt
+   16px = 12pt
+
+   texto fluidos
+   em - multiplicado pelo pai
+   rem - multiplicado pelo root
+ */
+
 @media screen and (min-width: 768px) {
-    span#burguer {
-        display: none;
-    }
+  span#burguer {
+    display: none;
+  }
 
-    menu {
-        display: block;
-    }
+  menu {
+    display: block;
+  }
 
-    menu > ul > li {
-        display: inline-block;
-    }
+  menu > ul > li {
+    display: inline-block;
+  }
 
-    main {
-        width: 768px;
-    }
+  main {
+    width: 768px;
+  }
 }
