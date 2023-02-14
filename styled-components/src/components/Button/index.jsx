@@ -11,4 +11,8 @@ const Button = styled.button`
   font-weight: bold;
 `;
 
+const btn = styled.button`
+  background-color: ${(props) => (props.isOn ? "#00000" : "gray")};
+`;
+
 export default Button;

@@ -36,7 +36,7 @@ function App() {
       <GlobalStyle />
       <div className="App">
         <h1>AOBA!</h1>
-        <Button>Botão</Button>
+        <Button isOn={theme}>Botão</Button>
         <Button onClick={handleTheme}>Alterar tema</Button>
         <Title />
       </div>
